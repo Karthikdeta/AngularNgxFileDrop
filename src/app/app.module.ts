@@ -3,16 +3,28 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MyappComponent } from './myapp/myapp.component';
+import { BlueComponent } from './blue/blue.component';
+import { RedComponent } from './red/red.component';
+import { OrangeComponent } from './orange/orange.component';
+import { NgxFileDropModule } from 'ngx-file-drop';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MyappComponent,
+    BlueComponent,
+    RedComponent,
+    OrangeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxFileDropModule,
+    HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [MyappComponent]
 })
 export class AppModule { }

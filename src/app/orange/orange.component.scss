@@ -1,0 +1,10 @@
+.orange {
+    border: 2px;
+    //color: orange;
+    border-style: solid;
+    width: auto;
+}
+
+:host ::ng-deep h3 {
+    color: green;
+}

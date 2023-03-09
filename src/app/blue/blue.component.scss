@@ -1,0 +1,18 @@
+.blue {
+    border: 2px;
+    color: blue;
+    border-style: solid;
+    width: auto;
+}
+
+:host {
+    margin: 20px;    
+}
+
+:host-context(.blue-theme) ::ng-deep .btn-theme {
+    background: blue;
+}
+
+:host-context(.red-theme) ::ng-deep .btn-theme {
+    background: red;
+}
